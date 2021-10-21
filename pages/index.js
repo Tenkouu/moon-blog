@@ -20,7 +20,7 @@ export default function Home() {
       <MyNavbar />
       <div className="blog-detail-page">
         <Row>
-          <Col md="10">
+          <Col md="8">
             <Intro />
           </Col>
         </Row>
@@ -37,13 +37,76 @@ export default function Home() {
             </Col>
 
             <Col md="4">
-              <GridItem />
+              <Card className={`fj-card`}>
+                <div className="card-body-wrapper">
+                  <Card.Header className="d-flex flex-row">
+                    <img
+                      src={"https://source.unsplash.com/user/erondu/150x150"}
+                      className="rounded-circle me-2"
+                      height="50px"
+                      width="50px"
+                      alt="avatar"
+                    />
+                    <div>
+                      <Card.Title className="font-weight-bold mb-1">
+                        Амар Өсөхбаяр
+                      </Card.Title>
+                      <Card.Text className="card-date">
+                        2021 оны 3 сарын 2
+                      </Card.Text>
+                    </div>
+                  </Card.Header>
+                  <div className="view overlay">
+                    <Card.Img
+                      src="https://source.unsplash.com/collection/190727/250x250"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="card-main-title">
+                      Монолотик архитектур
+                    </Card.Title>
+                    <Card.Text>Вэб технологи</Card.Text>
+                  </Card.Body>
+                </div>
+              </Card>
             </Col>
 
             <Col md="4">
-              <GridItem />
+              <Card className={`fj-card`}>
+                <div className="card-body-wrapper">
+                  <Card.Header className="d-flex flex-row">
+                    <img
+                      src={"https://source.unsplash.com/user/erondu/150x150"}
+                      className="rounded-circle me-2"
+                      height="50px"
+                      width="50px"
+                      alt="avatar"
+                    />
+                    <div>
+                      <Card.Title className="font-weight-bold mb-1">
+                        Амар Өсөхбаяр
+                      </Card.Title>
+                      <Card.Text className="card-date">
+                        2021 оны 3 сарын 2
+                      </Card.Text>
+                    </div>
+                  </Card.Header>
+                  <div className="view overlay">
+                    <Card.Img
+                      src="https://source.unsplash.com/collection/190726/250x250"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="card-main-title">
+                      Sanity блог хийх
+                    </Card.Title>
+                    <Card.Text>Вэб технологи</Card.Text>
+                  </Card.Body>
+                </div>
+              </Card>
             </Col>
-            
           </Row>
         </div>
       </div>
